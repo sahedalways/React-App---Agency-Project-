@@ -1,0 +1,238 @@
+.archive_img_and_items {
+  background-image: url("../../Assets/images/archive-bg.png");
+  width: 100%;
+}
+
+.archive_wrapper {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 12rem;
+}
+
+.archive_items {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.archive_item:hover {
+  transform: scale(1.1);
+}
+
+.archive_items_left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.archive_items_right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 9rem;
+}
+
+.archive_item h2 {
+  font-weight: 700 !important;
+  color: var(--color-white);
+}
+
+.archive_items_left .box_1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #a0f6d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 40px 100px -40px var(--color-primary);
+  cursor: pointer;
+}
+
+.archive_items_left .box_2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fdbbcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 40px 100px -40px var(--color-primary);
+  cursor: pointer;
+}
+
+.archive_items_right .box_3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f9cafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 40px 100px -40px var(--color-primary);
+  cursor: pointer;
+}
+
+.archive_items_right .box_4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #9de78a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 40px 100px -40px var(--color-primary);
+  cursor: pointer;
+}
+
+.archive_item h2 span {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+#different {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.archive_Titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.achivement {
+  margin: 60px 0px !important;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.single_achivement {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.single_achivement h6 {
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+
+/* Responsive area starts from here */
+@media only screen and (max-width: 1250px) {
+  .archive_wrapper {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    margin-top: -4rem;
+    gap: 7rem;
+  }
+
+  .archive_img_and_items {
+    margin-bottom: -6rem;
+    width: 120%;
+    margin-left: -1.5rem;
+  }
+
+  .archive_items {
+    justify-content: center;
+  }
+
+  .archive_img {
+    margin-bottom: 5rem;
+  }
+
+  .archive_content {
+    font-size: 1.5rem;
+  }
+
+  .archive_content h4 {
+    font-size: 1rem;
+  }
+
+  .archive_Titles h2 {
+    font-size: 40px !important;
+  }
+
+  .achivement {
+    gap: 2.8rem;
+  }
+
+  .single_achivement h5 {
+    font-size: 0.9rem !important;
+  }
+
+  .single_achivement h6 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .archive_wrapper {
+    display: grid;
+    grid-template-columns: 35% 54%;
+    gap: 10rem;
+  }
+
+  .archive_img_and_items {
+    width: 130%;
+  }
+  .archive_items {
+    justify-content: center;
+    margin-left: -9rem !important;
+  }
+
+  .achivement {
+    gap: 2.5rem;
+  }
+
+  .single_achivement h5 {
+    font-size: 0.7rem !important;
+  }
+
+  .single_achivement h6 {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .archive_wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .archive_items {
+    margin-left: -5rem;
+  }
+
+  .archive_items_right {
+    margin-top: -2rem;
+  }
+
+  .archive_img {
+    width: 100%;
+  }
+
+  .archive_img_and_items {
+    margin-bottom: -4rem;
+  }
+
+  .achivement {
+    margin: 40px 0px !important;
+    gap: 4rem !important;
+  }
+
+  .single_achivement {
+    gap: 1px;
+  }
+
+  .single_achivement h5 {
+    font-size: 1rem !important;
+  }
+}
+
+/* Responsive area ends here */

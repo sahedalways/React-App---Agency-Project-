@@ -1,0 +1,116 @@
+.analytic_titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.analytic_titles h2 {
+  width: 50%;
+}
+
+.analytic_titles .analyticBtn {
+  width: 15%;
+  height: min-content;
+  border-top: 1px solid var(--color-primary);
+  border-right: none;
+  border-bottom: none;
+  margin-top: 4rem;
+}
+
+.analytic_items {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 30px 60px 70px 45px;
+}
+
+.analytic_items:nth-child(1) {
+  background: radial-gradient(circle at bottom right, #e5fddf, #fff 40%);
+}
+
+.analytic_items:nth-child(2) {
+  background: radial-gradient(circle at bottom right, #c3fee7, #fff 40%);
+}
+
+.analytic_items:nth-child(3) {
+  background: radial-gradient(circle at bottom right, #fad7fc, #fff 40%);
+}
+
+.analytic_item_icon {
+  margin-left: -1.6rem;
+  margin-bottom: -3rem;
+}
+
+.analytic_item_list {
+  margin-left: -2rem;
+}
+
+.analytic_item_list ul li p {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.analytic_item_list ul li p .list_symbol {
+  color: var(--color-white);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.analytic_items:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive area starts from here */
+
+@media screen and (max-width: 1250px) {
+  .analytic_items {
+    gap: 30px;
+  }
+  .analytic_list_item_name {
+    font-size: 20px;
+  }
+
+  .analytic_titles h2 {
+    width: 75%;
+    font-size: 40px !important;
+  }
+  .analytic_titles .analyticBtn {
+    padding: 0.5rem 1rem;
+    width: 20%;
+    font-size: 16px;
+  }
+
+  .analytic_item_name h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .analytic_list_item_name {
+    font-size: 20px;
+  }
+  .analytic_titles {
+    margin-bottom: 2rem;
+  }
+
+  .analytic_titles h2 {
+    width: 75%;
+    font-size: 35px !important;
+  }
+  .analytic_titles .analyticBtn {
+    margin-top: 2.4rem;
+    width: 20%;
+    font-size: 10px;
+  }
+}
+
+/* Responsive area ends here */

@@ -1,0 +1,115 @@
+.services_bg_img {
+  background-image: url("../../Assets/images/services-bg-left.png"),
+    url("../../Assets/images/services-bg-right.png");
+  background-position: left center, right top;
+  background-size: 11vw 90vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.services_wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 35px;
+}
+
+.services_titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.services_contents {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2rem;
+}
+
+.services_icon {
+  margin-bottom: -3.5rem;
+  margin-left: -1.5rem;
+}
+
+.services_items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 60px 70px 45px;
+}
+
+.services_items:nth-child(1) {
+  background: radial-gradient(circle at bottom right, #fed5ea, #fff 40%);
+}
+
+.services_items:nth-child(2) {
+  background: radial-gradient(circle at bottom right, #fed5ea, #fff 40%);
+}
+
+.services_items:nth-child(3) {
+  background: radial-gradient(circle at bottom right, #d3fbef, #fff 40%);
+}
+
+.services_items:nth-child(4) {
+  background: radial-gradient(circle at bottom right, #d8d3ff, #fff 40%);
+}
+
+.services_titles_btn {
+  border-right: none;
+  border-bottom: none;
+  border-top: 1px solid var(--color-primary);
+  margin-top: 2rem;
+}
+
+/* Responsive area starts from here */
+@media only screen and (max-width: 1400px) {
+  .services_titles h2 {
+    font-size: 2.5rem !important;
+  }
+  .services_titles {
+    gap: 1.5rem;
+  }
+  .services_contents {
+    gap: 1rem;
+  }
+
+  .services_items {
+    gap: 30px;
+  }
+
+  .services_item_name h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .services_wrapper {
+    grid-template-columns: 100%;
+    gap: 1rem;
+  }
+  .services_contents {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .services_wrapper {
+    grid-template-columns: 100%;
+  }
+
+  .services_contents {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .services_item_name h3 {
+    font-size: 28px;
+  }
+
+  .services_titles {
+    gap: 1rem;
+  }
+}
+
+/* Responsive area starts from here */

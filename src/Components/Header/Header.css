@@ -1,0 +1,191 @@
+/*header area starts from here */
+
+header {
+  width: 100%;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-image: url("../../Assets/images/hero-bg.jpg");
+  position: relative;
+}
+
+.headerContainer {
+  margin-top: 70px;
+}
+
+.hero_bg_style {
+  position: absolute;
+  margin-top: -9rem;
+  z-index: -1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*logo area starts from here */
+
+.logo_area h2 {
+  margin-bottom: 0;
+  font-family: logoFonts;
+  font-size: 55px;
+  color: var(--color-white);
+}
+
+/*logo area ends here */
+
+/*navlist area starts from here */
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  list-style: none;
+  column-gap: 2.7rem;
+}
+
+.nav_item a {
+  color: var(--color-white) !important;
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  line-height: 40px;
+  height: 60px;
+  padding: 10px 0px;
+}
+
+.custom_search {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  border-radius: 50px;
+}
+
+.custom_search span svg {
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 36px;
+}
+
+.mobile_menu span i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  font-size: 36px;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.cart_icon {
+  position: relative;
+  z-index: 999;
+  font-size: 36px;
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  top: -6px;
+  right: -5px;
+  z-index: 1000;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-weight: 700;
+}
+
+/*navlist area ends here */
+
+/*============Responsive starts from here=============*/
+
+@media only screen and (max-width: 992px) {
+  .hero_bg_style {
+    margin-top: -16rem;
+  }
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+  }
+
+  .nav_list_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: var(--color-primary);
+    flex-direction: column;
+    box-shadow: 5px 5px 15px -5px #f5b70a;
+    justify-content: center !important;
+    padding: 0px 20px;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav_item a {
+    font-size: 0.9rem;
+  }
+
+  .header {
+    line-height: 40px;
+    padding: 10px 0px;
+  }
+  .custom_search {
+    border: 1px solid #c4c4c4b3;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  .mobile_menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .active_menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    height: 75% !important;
+    margin-top: -4rem;
+  }
+}
+/*============Responsive ends here=============*/

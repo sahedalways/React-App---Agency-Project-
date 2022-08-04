@@ -1,0 +1,237 @@
+/* footer section starts from here */
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.footer_section {
+  padding: 100px 0px 30px 0px;
+  background-color: #faf7ff;
+  background-image: url("../../Assets/images/footer-bg.png");
+  background-repeat: no-repeat;
+}
+
+.footer_titles {
+  font-size: 20px;
+  font-weight: 700 !important;
+  font-family: "Niramit", sans-serif;
+}
+
+/* footer section ends here */
+
+/* footer top area starts from here */
+
+.logo {
+  color: var(--color-primary) !important;
+  margin-bottom: 50px;
+  margin-top: -1rem;
+}
+
+.footer_top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#language {
+  font-family: "Poppins" sans-serif;
+  background: transparent;
+  color: red;
+}
+
+.footer_top_menu_list ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: -2rem;
+}
+
+.footer_top_menu_list ul li a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.footer_top_socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  color: var(--color-primary);
+}
+
+.footer_top_socials span {
+  width: 45px;
+  height: 45px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer_top_socials span:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* footer top area ends here */
+
+/* footer bottom area starts from here */
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 70px;
+}
+
+.footer_bottom_download_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer_bottom_download_area h6 {
+  width: 200px;
+  height: 70px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
+.footer_bottom_download_area span svg {
+  font-size: 28px;
+  margin-right: 1rem;
+}
+
+.footer_bottom_copyright_area h5 {
+  font-weight: 400 !important;
+}
+
+/* footer botttom area ends here */
+
+/* footer information area starts from here */
+.footer_info_title {
+  margin-bottom: 50px;
+}
+
+.footer_info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer_info_list small {
+  color: var(--color-black);
+}
+
+.footer_info_list h6 {
+  color: var(--color-primary);
+  font-weight: 400 !important;
+}
+
+.footer_contact_number{
+  font-size: 20px;
+}
+/* footer information area ends here */
+
+/* footer about area starts from here */
+.footer_about_title {
+  margin-bottom: 50px;
+}
+
+.footer_about_menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: -2rem;
+}
+
+.footer_about_menu_list ul li a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.footer_about_menu_list ul li a:hover {
+  color: var(--color-primary);
+}
+/* footer about area ends here */
+
+/* footer stayInLoop area starts from here */
+.footer_stayInLoop {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer_stayInLoop_desc small {
+  color: var(--color-black);
+}
+
+.footer_stayInLoop_input input {
+  width: 270px;
+  height: 55px;
+}
+
+.footer_stayInLoop_input input {
+  width: 270px;
+  height: 55px;
+}
+
+.footer_stayInLoop_input input::placeholder {
+  padding-left: 1.5rem;
+}
+
+.footer_stayInLoop_input span svg {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-left: -3rem;
+}
+/* footer stayInLoop area ends here */
+
+/* Responsive area starts from here */
+@media only screen and (max-width: 1350px) {
+  .footer_wrapper {
+    grid-template-columns: 49% 49%;
+    gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer_wrapper {
+    grid-template-columns: 100%;
+  }
+  .footer_top {
+    gap: 20px;
+  }
+  .footer_info_list {
+    gap: 20px;
+  }
+
+  .footer_stayInLoop_title {
+    margin-bottom: -2rem;
+  }
+
+  .footer_info_title {
+    margin-bottom: 2rem;
+  }
+
+  .footer_about_title {
+    margin-bottom: 2rem;
+  }
+
+  .footer_stayInLoop_desc {
+    margin-bottom: -2rem;
+  }
+}
+
+/* Responsive area starts from here */
