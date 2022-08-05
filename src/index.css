@@ -28,6 +28,10 @@
   transition: var(--transition);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 *::selection {
   background: var(--color-primary);
   color: var(--color-white);
@@ -76,7 +80,6 @@ h5 {
   font-family: "Niramit", sans-serif;
   font-weight: 700 !important;
 }
-
 
 p {
   font-size: 21px;
